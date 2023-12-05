@@ -12,6 +12,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import GoogleIcon from '@mui/icons-material/Google';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import Link from "next/link";
+import Header from "./Header";
 
 const navItems = [
     {
@@ -42,6 +43,8 @@ const navItems = [
 
 function Navbar() {
   return (
+    <>
+    <Header></Header>
     <AppBar position="static" className="bg-black">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -80,6 +83,7 @@ function Navbar() {
         </Toolbar>
       </Container>
     </AppBar>
+    </>
   );
 }
 export default Navbar;

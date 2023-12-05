@@ -1,4 +1,6 @@
+import Footer from '@/components/shared/Footer'
 import Navbar from '@/components/shared/Navbar'
+import { Container } from '@mui/material'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
@@ -14,7 +16,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
       <Navbar></Navbar>
-      {children}
+     <Container className='min-h-screen'>
+     {children}
+     </Container>
+      <Footer></Footer>
       </body>
     </html>
   )
